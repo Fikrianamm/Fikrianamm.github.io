@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #94a3b8;
+  }
+
+  .menu-acive {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+
+  .fa-arrow-down {
+    position: relative;
+    animation: scroll-down 1s ease-in-out infinite;
+    -webkit-animation: scroll-down 1s ease-in-out infinite;
+  }
+
+  @keyframes scroll-down {
+    0% {
+      opacity: 0.5;
+    }
+    20% {
+      opacity: 0.8;
+      top: 5px;
+    }
+    40% {
+      opacity: 1;
+      top: 5px;
+    }
+    60% {
+      opacity: 0.8;
+      top: 5px;
+    }
+    80% {
+      opacity: 0.5;
+      top: 5px;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .menu {
+      border: 1px solid #94a3b8;
+      backdrop-filter: blur(2px);
+      opacity: 0;
+      transform: translateY(100);
+      -webkit-transform: translateY(100);
+      -moz-transform: translateY(100);
+      -ms-transform: translateY(100);
+      -o-transform: translateY(100);
+      transform-origin: top;
+      transition: all 0.4s ease-in;
+      -webkit-transition: all 0.4s ease-in;
+      -moz-transition: all 0.4s ease-in;
+      -ms-transition: all 0.4s ease-in;
+      -o-transition: all 0.4s ease-in;
+    }
+    .menu.menu-active {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

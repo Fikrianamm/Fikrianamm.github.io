@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Source Sans Pro-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hamburger jonsuh -->
+    <link rel="stylesheet" href="src/dist/css/hamburger.css" />
+
+    <!-- CSS -->
+    <link href="src/dist/css/output.css" rel="stylesheet" />
+
+    <title>Fikrianam</title>
+  </head>
+  <body class="bg-slate-900 text-white overflow-hidden">
+    <!-- Navbar -->
+    <header class="p-4">
+      <div class="container mx-auto lg:w-4/5 w-full">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-x-2 text-slate-400 text-xl">
+            <h1
+              class="font-semibold uppercase cursor-pointer hover:text-slate-200"
+            >
+              Fikrianam.
+            </h1>
+            <div>|</div>
+            <a href="https://github.com/Fikrianamm">
+              <i
+                class="fa-brands fa-github cursor-pointer text-xl hover:text-slate-200"
+              ></i>
+            </a>
+          </div>
+          <nav
+            class="menu list-none uppercase flex items-center gap-x-8 gap-y-2 absolute lg:static flex-col lg:flex-row lg:w-auto w-[150px] top-24 right-10 rounded-lg drop-shadow-lg bg-slate-800 bg-opacity-50 lg:bg-transparent py-2 z-10"
+          >
+            <li>
+              <a
+                class="text-base text-slate-400 hover:text-slate-200 block py-2"
+                href="#home"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base text-slate-400 hover:text-slate-200 block py-2"
+                href="#playground"
+              >
+                Playground
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base text-slate-400 hover:text-slate-200 block py-2"
+                href="#gallery"
+              >
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base text-slate-400 hover:text-slate-200 block py-2"
+                href="#blog"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base text-slate-400 hover:text-slate-200 block py-2"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </li>
+          </nav>
+          <div class="block lg:hidden">
+            <button class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box">
+                <span
+                  class="hamburger-inner bg-slate-400 before:bg-slate-400 after:bg-slate-400"
+                ></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+
+    <!-- Landing -->
+    <section class="p-4" id="home">
+      <div class="container mx-auto w-full lg:w-4/5">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="md:w-1/2">
+            <div class="uppercase text-base text-slate-600 h-1/2 mt-0">
+              <span>30 December 2023</span><span>|</span>
+              <span>08.00 PM</span>
+            </div>
+            <div class="h-1/2 mt-12 md:mt-24">
+              <h1 class="text-base text-slate-200 font-semibold">Welcome !</h1>
+              <h1 class="uppercase text-4xl font-bold text-slate-200">
+                i'm fikri anam
+              </h1>
+              <p class="text-lg font-light mt-6 text-slate-400 leading-relaxed">
+                Welcome to my personal website! As an
+                <span class="font-semibold text-red-600">amateur</span>, I'm
+                eager to explore new opportunities and continue to
+                <span class="font-semibold text-sky-600">develop</span> my
+                skills and
+                <span class="font-semibold text-emerald-600">knowledge</span>.
+                This site is a platform for me to showcase what I'm passionate
+                about, share my thoughts and ideas, and
+                <span class="font-semibold text-yellow-500">connect</span> with
+                others who share similar interests. I look forward to growing
+                and <span class="font-semibold text-slate-300">learning</span>,
+                and I hope you'll join me on this
+                <span class="font-semibold text-orange-600">journey</span>.
+                Thank you for visiting!
+              </p>
+            </div>
+          </div>
+          <div class="mt-8 md:mt-0 pt-8 block md:w-1/2">
+            <img
+              class="ml-auto lg:w-[410px] md:w-[350px] w-[250px] rotate-45 mix-blend-color-dodge"
+              src="public/assets/img/cube.png"
+              alt="cube"
+            />
+          </div>
+        </div>
+        <div class="mt-4 lg:mt-0">
+          <div class="scroll-down text-center w-fit mx-auto text-slate-600">
+            <p class="uppercase yt">Scroll down</p>
+            <i class="fa-solid fa-arrow-down h-10"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Landing -->
+
+    <!-- Playground -->
+    <section class="h-[1000px]">
+      <div class="container">
+        <div class="">
+          <div class="">
+            <h1 class="uppercase">Playground</h1>
+            <p>"A playground is a place where I play using code."</p>
+          </div>
+          <div class=""></div>
+        </div>
+      </div>
+    </section>
+    <!-- Playground -->
+
+    <!-- script.js -->
+    <script src="src/dist/js/script.js
+    "></script>
+  </body>
+</html>
