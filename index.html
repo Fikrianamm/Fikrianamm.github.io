@@ -30,7 +30,7 @@
 
     <title>Fikrianam</title>
   </head>
-  <body class="bg-slate-900 text-white overflow-hidden">
+  <body class="bg-slate-900 text-white">
     <!-- Navbar -->
     <header class="p-4">
       <div class="container mx-auto lg:w-4/5 w-full">
@@ -49,7 +49,7 @@
             </a>
           </div>
           <nav
-            class="menu list-none uppercase flex items-center gap-x-8 gap-y-2 absolute lg:static flex-col lg:flex-row lg:w-auto w-[150px] top-24 right-10 rounded-lg drop-shadow-lg bg-slate-800 bg-opacity-50 lg:bg-transparent py-2 z-10"
+            class="menu list-none uppercase flex invisible lg:visible items-center gap-x-8 gap-y-2 absolute lg:static flex-col lg:flex-row lg:w-auto w-[150px] top-24 right-10 rounded-lg drop-shadow-lg bg-slate-800 bg-opacity-50 lg:bg-transparent py-2 z-10"
           >
             <li>
               <a
@@ -148,8 +148,10 @@
         </div>
         <div class="mt-4 lg:mt-0">
           <div class="scroll-down text-center w-fit mx-auto text-slate-600">
-            <p class="uppercase yt">Scroll down</p>
-            <i class="fa-solid fa-arrow-down h-10"></i>
+            <a href="#playground">
+              <p class="uppercase yt">Scroll down</p>
+              <i class="fa-solid fa-arrow-down h-10"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -157,14 +159,193 @@
     <!-- Landing -->
 
     <!-- Playground -->
-    <section class="h-[1000px]">
-      <div class="container">
-        <div class="">
-          <div class="">
-            <h1 class="uppercase">Playground</h1>
-            <p>"A playground is a place where I play using code."</p>
+    <section class="h-[1000px] p-4" id="playground">
+      <div class="container mx-auto w-full lg:w-4/5">
+        <div class="flex flex-col justify-center items-center">
+          <div class="mx-auto text-center">
+            <h1 class="uppercase text-3xl font-bold mb-3 text-slate-300">
+              Playground
+            </h1>
+            <p class="text-base font-light text-slate-400">
+              "A playground is a place where I play using code."
+            </p>
           </div>
-          <div class=""></div>
+          <!-- Grid -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"
+          >
+            <!-- Card -->
+            <!-- 404 Error -->
+            <div
+              class="card rounded-2xl hover:outline outline-sky-600 transition-all ease-in-out pb-2"
+            >
+              <div class="p-1">
+                <div class="rounded-xl overflow-hidden">
+                  <img
+                    class="w-[300px] object-cover object-center"
+                    src="public/assets/img/404.png"
+                    alt="404"
+                  />
+                </div>
+                <div class="uppercase p-1 mt-2">
+                  <h1 class="text-xl font-semibold text-slate-300">
+                    Error page not found
+                  </h1>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://fikrianamm.github.io/404-ERROR/"
+                    >Demo</a
+                  ><span class="text-slate-400">|</span>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://github.com/Fikrianamm/404-ERROR"
+                    >repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Tailwind -->
+            <div
+              class="card rounded-2xl hover:outline outline-sky-600 transition-all ease-in-out pb-2"
+            >
+              <div class="p-1">
+                <div class="rounded-xl overflow-hidden">
+                  <img
+                    class="w-[300px] object-cover object-center"
+                    src="public/assets/img/portfolio-tailwind.png"
+                    alt="portfolio-tailwind"
+                  />
+                </div>
+                <div class="uppercase p-1 mt-2">
+                  <h1 class="text-xl font-semibold text-slate-300">
+                    portfolio tailwind
+                  </h1>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://fikrianamm.github.io/website-tailwind/"
+                    >Demo</a
+                  ><span class="text-slate-400">|</span>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://github.com/Fikrianamm/website-tailwind"
+                    >repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Holadok -->
+            <div
+              class="card rounded-2xl hover:outline outline-sky-600 transition-all ease-in-out pb-2"
+            >
+              <div class="p-1">
+                <div class="rounded-xl overflow-hidden">
+                  <img
+                    class="w-[300px] object-cover object-center"
+                    src="public/assets/img/holadok.png"
+                    alt="holadok"
+                  />
+                </div>
+                <div class="uppercase p-1 mt-2">
+                  <h1 class="text-xl font-semibold text-slate-300">Holadok</h1>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://fikrianamm.github.io/holadok/"
+                    >Demo</a
+                  ><span class="text-slate-400">|</span>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://github.com/Fikrianamm/holadok"
+                    >repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Simon Game -->
+            <div
+              class="card rounded-2xl hover:outline outline-sky-600 transition-all ease-in-out pb-2"
+            >
+              <div class="p-1">
+                <div class="rounded-xl overflow-hidden">
+                  <img
+                    class="w-[300px] object-cover object-center"
+                    src="public/assets/img/simon.png"
+                    alt="simon"
+                  />
+                </div>
+                <div class="uppercase p-1 mt-2">
+                  <h1 class="text-xl font-semibold text-slate-300">
+                    Simon Game
+                  </h1>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://fikrianamm.github.io/Simon-Game/"
+                    >Demo</a
+                  ><span class="text-slate-400">|</span>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://github.com/Fikrianamm/Simon-Game"
+                    >repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Dice Game -->
+            <div
+              class="card rounded-2xl hover:outline outline-sky-600 transition-all ease-in-out pb-2"
+            >
+              <div class="p-1">
+                <div class="rounded-xl overflow-hidden">
+                  <img
+                    class="w-[300px] object-cover object-center"
+                    src="public/assets/img/dicegame.png"
+                    alt="dicegame"
+                  />
+                </div>
+                <div class="uppercase p-1 mt-2">
+                  <h1 class="text-xl font-semibold text-slate-300">
+                    Dice Game
+                  </h1>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://fikrianamm.github.io/DiceGame/"
+                    >Demo</a
+                  ><span class="text-slate-400">|</span>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://github.com/Fikrianamm/DiceGame"
+                    >repo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- DrumKit -->
+            <div
+              class="card rounded-2xl hover:outline outline-sky-600 transition-all ease-in-out pb-2"
+            >
+              <div class="p-1">
+                <div class="rounded-xl overflow-hidden">
+                  <img
+                    class="w-[300px] object-cover object-center"
+                    src="public/assets/img/drumkit.png"
+                    alt="drumkit"
+                  />
+                </div>
+                <div class="uppercase p-1 mt-2">
+                  <h1 class="text-xl font-semibold text-slate-300">DrumKit</h1>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://fikrianamm.github.io/DrumKit/"
+                    >Demo</a
+                  ><span class="text-slate-400">|</span>
+                  <a
+                    class="px-3 text-base font-medium text-slate-400 hover:text-slate-200"
+                    href="https://github.com/Fikrianamm/DrumKit"
+                    >repo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

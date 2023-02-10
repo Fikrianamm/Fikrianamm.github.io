@@ -1,4 +1,4 @@
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector('.hamburger');
 const doctitle = document.title;
 const menu = document.querySelector('.menu');
 
@@ -18,5 +18,4 @@ window.addEventListener('focus',()=>{
 window.addEventListener('scroll',()=>{
     hamburger.classList.remove('is-active')
     menu.classList.remove('menu-active')
-    
 });

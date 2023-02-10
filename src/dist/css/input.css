@@ -56,6 +56,10 @@
     }
   }
 
+  /* .card {
+    border: solid 2px #0891b2;
+  } */
+
   @media screen and (max-width: 1024px) {
     .menu {
       border: 1px solid #94a3b8;
@@ -80,6 +84,7 @@
       -ms-transform: translateY(0);
       -o-transform: translateY(0);
       opacity: 1;
+      visibility: visible;
     }
   }
 }
