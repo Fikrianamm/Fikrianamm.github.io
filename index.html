@@ -35,16 +35,16 @@
     <header class="p-4">
       <div class="container mx-auto lg:w-4/5 w-full">
         <div class="flex justify-between items-center">
-          <div class="flex items-center gap-x-2 text-slate-400 text-xl">
+          <div class="flex items-center gap-x-2">
             <h1
-              class="font-semibold uppercase cursor-pointer hover:text-slate-200"
+              class="font-semibold uppercase cursor-pointer text-slate-400 text-xl hover:text-slate-200 transition-all"
             >
               Fikrianam.
             </h1>
             <div>|</div>
             <a
               href="https://github.com/Fikrianamm"
-              class="cursor-pointer text-xl hover:text-slate-200"
+              class="cursor-pointer text-slate-400 text-xl hover:text-slate-200 transition-all"
               title="Github"
             >
               <i class="fa-brands fa-github"></i>
@@ -55,7 +55,7 @@
           >
             <li>
               <a
-                class="text-base text-slate-400 hover:text-slate-200 block py-2"
+                class="text-base font-semibold text-slate-400 hover:text-slate-200 transition-all block py-2"
                 href="#home"
               >
                 Home
@@ -63,7 +63,7 @@
             </li>
             <li>
               <a
-                class="text-base text-slate-400 hover:text-slate-200 block py-2"
+                class="text-base font-semibold text-slate-400 hover:text-slate-200 transition-all block py-2"
                 href="#playground"
               >
                 Playground
@@ -71,7 +71,7 @@
             </li>
             <li>
               <a
-                class="text-base text-slate-400 hover:text-slate-200 block py-2"
+                class="text-base font-semibold text-slate-400 hover:text-slate-200 transition-all block py-2"
                 href="#contact"
               >
                 Contact
@@ -97,10 +97,12 @@
       <div class="container mx-auto w-full lg:w-4/5 overflow-hidden">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="md:w-1/2">
-            <div class="uppercase text-base text-slate-600 h-1/2 mt-0">
-              <span>30 December 2023</span><span>|</span>
-              <span>08.00 PM</span>
-            </div>
+            <div
+              class="day uppercase text-base font-semibold text-slate-600 h-1/2 mt-0"
+            ></div>
+            <div
+              class="date uppercase text-base font-semibold text-slate-600 h-1/2 mt-0"
+            ></div>
             <div class="h-1/2 mt-12 md:mt-24">
               <h1 class="text-base text-slate-200 font-semibold">Welcome !</h1>
               <h1 class="uppercase text-4xl font-bold text-slate-200">
@@ -145,7 +147,7 @@
         <div class="mt-4 lg:mt-0">
           <div class="scroll-down text-center w-fit mx-auto text-slate-600">
             <a href="#playground">
-              <p class="uppercase font-medium">Scroll down</p>
+              <p class="uppercase font-semibold">Scroll down</p>
               <i class="fa-solid fa-arrow-down h-10"></i>
             </a>
           </div>
@@ -364,7 +366,11 @@
             class="mt-8 mr-auto w-full flex justify-between items-start gap-x-1 lg:gap-x-4"
           >
             <div class="w-1/2">
-              <label for="name" class="block mb-2 text-slate-300">Name</label>
+              <label
+                for="name"
+                class="block mb-2 text-slate-300 font-semibold text-lg"
+                >Name</label
+              >
               <input
                 class="w-4/5 py-1 px-4 bg-transparent border-b mb-6 border-b-slate-500"
                 type="text"
@@ -373,7 +379,9 @@
                 required
                 autocomplete="off"
               />
-              <label for="email" class="block mb-2 text-slate-300"
+              <label
+                for="email"
+                class="block mb-2 text-slate-300 font-semibold text-lg"
                 >E-mail</label
               >
               <input
@@ -386,7 +394,9 @@
               />
             </div>
             <div class="w-1/2">
-              <label for="message" class="block mb-2 text-slate-300"
+              <label
+                for="message"
+                class="block mb-2 text-slate-300 font-semibold text-lg"
                 >Message</label
               >
               <textarea
@@ -442,21 +452,21 @@
             <li>
               <a
                 href="#home"
-                class="text-slate-500 hover:text-slate-300 transition-all"
+                class="text-slate-500 hover:text-slate-300 transition-all font-semibold text-lg"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="#playground"
-                class="text-slate-500 hover:text-slate-300 transition-all"
+                class="text-slate-500 hover:text-slate-300 transition-all font-semibold text-lg"
                 >Playground</a
               >
             </li>
             <li>
               <a
                 href="#contact"
-                class="text-slate-500 hover:text-slate-300 transition-all"
+                class="text-slate-500 hover:text-slate-300 transition-all font-semibold text-lg"
                 >Contact</a
               >
             </li>
