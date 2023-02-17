@@ -36,8 +36,13 @@ setInterval(()=>{
     const menit = newDate.getMinutes();
     const detik = newDate.getSeconds();
 
+    if (jam>12) {
+        waktu = jam % 12 + "." + menit + "." + detik + " PM"
+    }else{
+        waktu = jam % 12 + "." + menit + "." + detik + " AM"
+    }
 
     day.innerHTML = strHari[hari];
-    date.innerHTML = tanggal + " " + strBulan[bulan] + " " + tahun + " | " + jam + "." + menit + "." + detik;    
+    date.innerHTML = tanggal + " " + strBulan[bulan] + " " + tahun + " | " + waktu ;    
 },1000);
     
