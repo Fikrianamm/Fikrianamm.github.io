@@ -42,10 +42,12 @@
               Fikrianam.
             </h1>
             <div>|</div>
-            <a href="https://github.com/Fikrianamm">
-              <i
-                class="fa-brands fa-github cursor-pointer text-xl hover:text-slate-200"
-              ></i>
+            <a
+              href="https://github.com/Fikrianamm"
+              class="cursor-pointer text-xl hover:text-slate-200"
+              title="Github"
+            >
+              <i class="fa-brands fa-github"></i>
             </a>
           </div>
           <nav
@@ -65,22 +67,6 @@
                 href="#playground"
               >
                 Playground
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-base text-slate-400 hover:text-slate-200 block py-2"
-                href="#gallery"
-              >
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-base text-slate-400 hover:text-slate-200 block py-2"
-                href="#blog"
-              >
-                Blog
               </a>
             </li>
             <li>
@@ -108,7 +94,7 @@
 
     <!-- Landing -->
     <section class="p-4" id="home">
-      <div class="container mx-auto w-full lg:w-4/5">
+      <div class="container mx-auto w-full lg:w-4/5 overflow-hidden">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="md:w-1/2">
             <div class="uppercase text-base text-slate-600 h-1/2 mt-0">
@@ -120,6 +106,7 @@
               <h1 class="uppercase text-4xl font-bold text-slate-200">
                 i'm fikri anam
               </h1>
+              <div class="triangle relative"></div>
               <p class="text-lg font-light mt-6 text-slate-400 leading-relaxed">
                 Welcome to my personal website! As an
                 <span class="font-semibold text-red-600">amateur</span>, I'm
@@ -138,18 +125,27 @@
               </p>
             </div>
           </div>
-          <div class="mt-8 md:mt-0 pt-8 block md:w-1/2">
-            <img
-              class="ml-auto lg:w-[410px] md:w-[350px] w-[250px] rotate-45 mix-blend-color-dodge"
-              src="public/assets/img/cube.png"
-              alt="cube"
-            />
+          <div class="mt-8 md:mt-0 block md:w-1/2">
+            <div>
+              <i
+                class="fa-solid fa-plus top-plus text-2xl text-slate-500 opacity-30 relative"
+              ></i>
+              <img
+                class="cube ml-auto lg:w-[390px] md:w-[350px] w-[250px] mix-blend-color-dodge"
+                src="public/assets/img/cube.png"
+                alt="cube"
+              />
+
+              <i
+                class="fa-solid fa-plus bottom-plus text-2xl text-slate-500 opacity-30 relative"
+              ></i>
+            </div>
           </div>
         </div>
         <div class="mt-4 lg:mt-0">
           <div class="scroll-down text-center w-fit mx-auto text-slate-600">
             <a href="#playground">
-              <p class="uppercase yt">Scroll down</p>
+              <p class="uppercase font-medium">Scroll down</p>
               <i class="fa-solid fa-arrow-down h-10"></i>
             </a>
           </div>
@@ -159,20 +155,21 @@
     <!-- Landing -->
 
     <!-- Playground -->
-    <section class="h-[1000px] p-4" id="playground">
+    <section class="p-4 mt-16" id="playground">
       <div class="container mx-auto w-full lg:w-4/5">
         <div class="flex flex-col justify-center items-center">
           <div class="mx-auto text-center">
             <h1 class="uppercase text-3xl font-bold mb-3 text-slate-300">
               Playground
             </h1>
+            <div class="line mx-auto h-1 bg-slate-400 rounded-full"></div>
             <p class="text-base font-light text-slate-400">
               "A playground is a place where I play using code."
             </p>
           </div>
           <!-- Grid -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8"
           >
             <!-- Card -->
             <!-- 404 Error -->
@@ -350,6 +347,127 @@
       </div>
     </section>
     <!-- Playground -->
+
+    <!-- Contact -->
+    <section class="p-4 mt-16" id="contact">
+      <div class="container mx-auto w-full lg:w-4/5">
+        <div class="flex flex-col items-center">
+          <div class="mr-auto">
+            <h1 class="text-5xl font-bold text-slate-300">
+              Fill the form to
+              <span class="text-emerald-600 block">contact me.</span>
+            </h1>
+          </div>
+          <form
+            action="https://formspree.io/f/mdoveqpw"
+            method="POST"
+            class="mt-8 mr-auto w-full flex justify-between items-start gap-x-1 lg:gap-x-4"
+          >
+            <div class="w-1/2">
+              <label for="name" class="block mb-2 text-slate-300">Name</label>
+              <input
+                class="w-4/5 py-1 px-4 bg-transparent border-b mb-6 border-b-slate-500"
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                required
+                autocomplete="off"
+              />
+              <label for="email" class="block mb-2 text-slate-300"
+                >E-mail</label
+              >
+              <input
+                class="w-4/5 py-1 px-4 bg-transparent border-b mb-6 border-b-slate-500"
+                type="email"
+                name="email"
+                placeholder="Enter Your E-mail"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="w-1/2">
+              <label for="message" class="block mb-2 text-slate-300"
+                >Message</label
+              >
+              <textarea
+                class="w-4/5 py-1 px-4 bg-transparent border-b border-b-slate-500"
+                name="message"
+                placeholder="Enter Your Message Here"
+                required
+                autocomplete="off"
+                id=""
+                cols="10"
+                rows="3"
+              ></textarea>
+              <button
+                type="submit"
+                class="py-1 px-4 mt-4 text-slate-400 hover:text-slate-200 transition-all ease-in hover:translate-x-2"
+              >
+                Submit <i class="fa-solid fa-arrow-right ml-2"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <section class="p-4 mt-16 bg-slate-800">
+      <div class="container mx-auto w-full lg:w-4/5">
+        <div class="flex flex-col">
+          <div
+            class="flex justify-center items-center mt-2 mb-4 gap-x-8 text-2xl"
+          >
+            <a
+              href="https://www.facebook.com/fikri.taufiqul"
+              class="text-slate-500 hover:text-slate-300 transition-all"
+              title="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fikrianm_/"
+              class="text-slate-500 hover:text-slate-300 transition-all"
+              title="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://github.com/Fikrianamm"
+              class="text-slate-500 hover:text-slate-300 transition-all"
+              title="Github"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <nav class="list-none flex justify-center items-center gap-x-8 mb-4">
+            <li>
+              <a
+                href="#home"
+                class="text-slate-500 hover:text-slate-300 transition-all"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#playground"
+                class="text-slate-500 hover:text-slate-300 transition-all"
+                >Playground</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-slate-500 hover:text-slate-300 transition-all"
+                >Contact</a
+              >
+            </li>
+          </nav>
+          <p class="text-base text-slate-400 text-bold text-center">
+            Copyright &copy; 2022 All right Reserved | by Fikri Anam
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
 
     <!-- script.js -->
     <script src="src/dist/js/script.js
